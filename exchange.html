@@ -140,41 +140,6 @@
 <link rel="preload" href="assets/build/fonts/tt-norms-medium.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="assets/build/fonts/tt-norms-regular.ttf" as="font" type="font/ttf" crossorigin>
 <link href="assets/build/main.3ffc7ae408d14c080cc0.css" rel="stylesheet">
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NWGJNHR');</script>
-<script>
-	let utm = {};
-	let params = new URLSearchParams(document.location.href.split("?")[1]);
-
-	["utm_campaign", "utm_source", "utm_medium"].forEach((name) => {
-		let val = params.get(name);
-		if (val) {
-			if (name === "utm_campaign" && window.location.pathname === "index.html") {
-				val += `_v${params.get("v") || "1"}`;
-			}
-
-			document.cookie = `${name}=${val}; path=/; max-age=2592000; domain=nexo.io`;
-			utm[name] = val;
-		}
-	});
-
-	if (Object.keys(utm).length > 0) {
-		document.cookie = `utm_data=${JSON.stringify(utm)}; path=/; max-age=2592000; domain=nexo.io`;
-	}
-
-	if (!document.referrer.match(/:\/\/(.*\.)?nexo\./)) {
-		document.cookie = `referer=${document.referrer}; path=/`;
-	}
-
-	let clickId = params.get('irclickid')
-	if (clickId) {
-		document.cookie = `irclickid=${clickId}; path=/; domain=nexo.io`;
-	}
-</script>
-<script src="../www.googleoptimize.com/optimizede45.js?id=OPT-T9C8HZ7"></script>
 <style>
 		#popup-banner p.text-16 {
 	max-width: 22ch;
@@ -364,7 +329,6 @@ header h3 {
 	</style>
 </head>
 <body id="exchange" class="lang-en t-light t-indigo is-scrolled-up " data-navbar-theme="light" data-set-navbar-theme="light" ob-scrolled="target$qs: body, slack: 250" ob-nav>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWGJNHR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 	window.langbar = {"en":{"text":"Nexo's website is also available in","label":"Continue"},"es":{"text":"El sitio web de Nexo tambi\u00e9n est\u00e1 disponible en","label":"Continuar"},"ja":{"text":"\u30cd\u30af\u30bd\u306e\u30a6\u30a7\u30d6\u30b5\u30a4\u30c8\u306f\u3001\u4ee5\u4e0b\u306e\u30b5\u30a4\u30c8\u3067\u3082\u3054\u89a7\u3044\u305f\u3060\u3051\u307e\u3059\u3002","label":"\u7d99\u7d9a"},"ko":{"text":"Nexo\uc758 \uc6f9\uc0ac\uc774\ud2b8\ub294","label":"\uacc4\uc18d\ud558\ub2e4"},"pt":{"text":"O website da Nexo tamb\u00e9m est\u00e1 dispon\u00edvel em","label":"Continuar"},"ru":{"text":"\u0412\u0435\u0431-\u0441\u0430\u0439\u0442 Nexo \u0442\u0430\u043a\u0436\u0435 \u0434\u043e\u0441\u0442\u0443\u043f\u0435\u043d \u043d\u0430 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0445 \u044f\u0437\u044b\u043a\u0430\u0445","label":"\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u044c"},"tr":{"text":"Nexo\u2019nun web sitesi \u015fu dillerde de mevcuttur","label":"Devam et"},"zh":{"text":"Nexo\u7684\u7f51\u7ad9\u4e5f\u6709\u4ee5\u4e0b\u7248\u672c","label":"\u7ee7\u7eed"}};
 </script>
@@ -407,13 +371,6 @@ Türkçe </option>
 <ul class="b-nav-drawer__content o-container my-8" ob-accordion="active: null">
 <li class="b-dropdown relative" ob-accordion-item>
 <div class="flex items-center justify-between">
-<a class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " href="buy-crypto.html">
-Buy </a>
-</div>
-<hr class="border-t-1 border-color-50 pr-24 -mr-24">
-</li>
-<li class="b-dropdown relative" ob-accordion-item>
-<div class="flex items-center justify-between">
 <a class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " href="earn-crypto.html">
 Earn </a>
 </div>
@@ -426,27 +383,13 @@ Exchange </a>
 </div>
 <hr class="border-t-1 border-color-50 pr-24 -mr-24">
 </li>
-<li class="b-dropdown relative" ob-accordion-item>
-<div class="flex items-center justify-between">
-<a class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " href="borrow.html">
-Borrow </a>
-</div>
-<hr class="border-t-1 border-color-50 pr-24 -mr-24">
-</li>
-<li class="b-dropdown relative" ob-accordion-item>
-<div class="flex items-center justify-between">
-<a class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " href="lithex-card.html">
-Nexo Card </a>
-</div>
-<hr class="border-t-1 border-color-50 pr-24 -mr-24">
-</li>
-<li class="b-dropdown relative" ob-accordion-item>
+<!-- <li class="b-dropdown relative" ob-accordion-item>
 <div class="flex items-center justify-between">
 <a class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " href="token.html">
 Token </a>
 </div>
 <hr class="border-t-1 border-color-50 pr-24 -mr-24">
-</li>
+</li> -->
 <li class="b-dropdown relative" ob-accordion-item>
 <div class="flex items-center justify-between">
 <button class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " ob-accordion-item-toggle>
@@ -475,23 +418,8 @@ Get to know Nexo </p>
 </div>
 </a>
 </li>
-<li>
-<a class="b-button-content py-12" href="blog.html">
-<div class="b-button-content__icon">
-<i class="o-icon o-icon--outline">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 5.9999C10.0002 4.89537 10.8956 4 12.0001 4H41.7926C43.0118 4 44.0002 4.98836 44.0002 6.20756V40.0025C44.0002 42.2102 42.2104 44 40.0026 44H39.999H7C5.34315 44 4 42.6569 4 41V12C4 10.8954 4.89543 10 6 10H35.999C37.103 10 37.9981 10.8945 37.999 11.9982L38.0002 11.9982L38.0265 26.8939L38.0265 26.8973L38.0051 39.9992C38.0033 41.1037 38.8981 42 40.0026 42C41.1058 42 42.0002 41.1057 42.0002 40.0025V6.20756C42.0002 6.09293 41.9072 6 41.7926 6L12.0001 6L12 8.00005L10 7.99995L10.0001 5.9999ZM36.0051 39.9959C36.0039 40.7259 36.1984 41.4105 36.5392 42H7C6.44772 42 6 41.5523 6 41V12H35.999V13H36.0019L36.0265 26.8941V26.8975L36.0051 39.9959ZM25 24C24.4477 24 24 24.4477 24 25C24 25.5523 24.4477 26 25 26H31C31.5523 26 32 25.5523 32 25C32 24.4477 31.5523 24 31 24H25ZM24 19C24 18.4477 24.4477 18 25 18H31C31.5523 18 32 18.4477 32 19C32 19.5523 31.5523 20 31 20H25C24.4477 20 24 19.5523 24 19ZM11 30C10.4477 30 10 30.4477 10 31C10 31.5523 10.4477 32 11 32H31C31.5523 32 32 31.5523 32 31C32 30.4477 31.5523 30 31 30H11ZM10 37C10 36.4477 10.4477 36 11 36H31C31.5523 36 32 36.4477 32 37C32 37.5523 31.5523 38 31 38H11C10.4477 38 10 37.5523 10 37ZM11.0264 26.027C10.4741 26.027 10.0264 25.5793 10.0264 25.027V17.027C10.0264 16.4747 10.4741 16.027 11.0264 16.027H19.0264C19.5787 16.027 20.0264 16.4747 20.0264 17.027V25.027C20.0264 25.5793 19.5787 26.027 19.0264 26.027H11.0264ZM12.0264 18.027V24.027H18.0264V18.027H12.0264Z" fill="black" />
-</svg>
-</i> </div>
-<div class="flex-grow">
-<span class="b-button-content__title">
-Blog </span>
-<p class="b-button-content__text">
-Nexo’s official channel </p>
-</div>
-</a>
-</li>
-<li>
+
+<!-- <li>
 <a class="b-button-content py-12" href="media-center.html">
 <div class="b-button-content__icon">
 <i class="o-icon o-icon--outline">
@@ -506,23 +434,8 @@ Media Center </span>
 News and press releases </p>
 </div>
 </a>
-</li>
-<li>
-<a class="b-button-content py-12" href="https://nexo.breezy.hr/" target="_blank" rel="noopener noreferrer">
-<div class="b-button-content__icon">
-<i class="o-icon o-icon--outline">
-<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15 5.89669C15 4.85026 15.8483 4.00195 16.8947 4.00195H40.1053C41.1517 4.00195 42 4.85026 42 5.89669V36.1072C42 37.1536 41.1517 38.002 40.1053 38.002H35V36.002H40V6.00195H17V8.00195H15V5.89669ZM7.99121 11.9948V42.0045L31.0029 42.0045V19.576H25.4994C24.3948 19.576 23.4994 18.6806 23.4994 17.576V11.9948H7.99121ZM25.4994 13.4267L29.6061 17.576L25.4994 17.576V13.4267ZM5.99121 11.9948C5.99121 10.8902 6.88664 9.99475 7.99121 9.99475H24.4994C24.7664 9.99475 25.0223 10.1015 25.2101 10.2913L32.7136 17.8726C32.8989 18.0598 33.0029 18.3126 33.0029 18.576V42.0045C33.0029 43.1091 32.1074 44.0045 31.0029 44.0045H7.99121C6.88664 44.0045 5.99121 43.1091 5.99121 42.0045V11.9948ZM15 36.002C14.4477 36.002 14 36.4497 14 37.002C14 37.5542 14.4477 38.002 15 38.002H24.0002C24.5525 38.002 25.0002 37.5542 25.0002 37.002C25.0002 36.4497 24.5525 36.002 24.0002 36.002H15ZM11 33.002C11 32.4497 11.4477 32.002 12 32.002H26.3158C26.8681 32.002 27.3158 32.4497 27.3158 33.002C27.3158 33.5542 26.8681 34.002 26.3158 34.002H12C11.4477 34.002 11 33.5542 11 33.002ZM19 18.0019C18.1716 18.0019 17.5 18.6735 17.5 19.5019C17.5 20.3304 18.1716 21.0019 19 21.0019C19.8284 21.0019 20.5 20.3304 20.5 19.5019C20.5 18.6735 19.8284 18.0019 19 18.0019ZM22.5 19.5019C22.5 20.2631 22.257 20.9675 21.8444 21.5419C23.7108 22.4346 25 24.3404 25 26.5474C25 27.3507 24.3488 28.0019 23.5454 28.0019H14.4545C13.6512 28.0019 13 27.3507 13 26.5474C13 24.3404 14.2892 22.4346 16.1556 21.5419C15.743 20.9675 15.5 20.2631 15.5 19.5019C15.5 17.5689 17.067 16.0019 19 16.0019C20.933 16.0019 22.5 17.5689 22.5 19.5019ZM18.5454 23.0019H19H19.4545C21.2271 23.0019 22.6959 24.3028 22.9583 26.0019H15.0417C15.3041 24.3028 16.7728 23.0019 18.5454 23.0019Z" fill="black" />
-</svg>
-</i> </div>
-<div class="flex-grow">
-<span class="b-button-content__title">
-Careers </span>
-<p class="b-button-content__text">
-Join the Nexo Team </p>
-</div>
-</a>
-</li>
+</li> -->
+
 <li>
 <a class="b-button-content py-12" href="licenses-and-registrations.html">
 <div class="b-button-content__icon">
@@ -550,7 +463,7 @@ digital assets institution </p>
 </i> </div>
 <div class="flex-grow">
 <span class="b-button-content__title">
-Nexo Prime </span>
+Liqd Prime </span>
 <p class="b-button-content__text">
 Crypto Prime Brokerage </p>
 </div>
@@ -589,12 +502,6 @@ Security </a>
 </div>
 <hr class="border-t-1 border-color-50 pr-24 -mr-24">
 </li>
-<li class="b-dropdown relative" ob-accordion-item>
-<div class="flex items-center justify-between">
-<a class="b-dropdown__link w-full py-20 text-18 font-medium text-color-500 text-left " href="https://support.nexo.io/hc/en-us" target="_blank" rel="noopener noreferrer">
-Help </a>
-</div>
-</li>
 </ul>
 <div class="flex-shrink-0 border-t-1 border-color-100 overflow-hidden">
 <div class="o-container py-16">
@@ -625,11 +532,7 @@ Create Account </a>
 <img src="assets/images/logo.png">
 </a>
 </div>
-<ul class="b-navbar__items o-col hidden lg:flex mr-auto">
-<li class="b-navbar__item relative">
-<a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="buy-crypto.html">
-Buy </a>
-</li>
+<ul class="b-navbar__items o-col hidden lg:flex ml-auto">
 <li class="b-navbar__item relative">
 <a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="earn-crypto.html">
 Earn </a>
@@ -638,18 +541,10 @@ Earn </a>
 <a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 is-active" href="exchange.html">
 Exchange </a>
 </li>
-<li class="b-navbar__item relative">
-<a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="borrow.html">
-Borrow </a>
-</li>
-<li class="b-navbar__item relative">
-<a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="lithex-card.html">
-Nexo Card </a>
-</li>
-<li class="b-navbar__item relative">
+<!-- <li class="b-navbar__item relative">
 <a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="token.html">
 Token </a>
-</li>
+</li> -->
 <li class="b-navbar__item relative">
 <button class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 cursor-default ">
 Company
@@ -677,23 +572,8 @@ Get to know Nexo </p>
 </div>
 </a>
 </li>
-<li>
-<a class="b-button-content py-12" href="blog.html">
-<div class="b-button-content__icon">
-<i class="o-icon o-icon--outline">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 5.9999C10.0002 4.89537 10.8956 4 12.0001 4H41.7926C43.0118 4 44.0002 4.98836 44.0002 6.20756V40.0025C44.0002 42.2102 42.2104 44 40.0026 44H39.999H7C5.34315 44 4 42.6569 4 41V12C4 10.8954 4.89543 10 6 10H35.999C37.103 10 37.9981 10.8945 37.999 11.9982L38.0002 11.9982L38.0265 26.8939L38.0265 26.8973L38.0051 39.9992C38.0033 41.1037 38.8981 42 40.0026 42C41.1058 42 42.0002 41.1057 42.0002 40.0025V6.20756C42.0002 6.09293 41.9072 6 41.7926 6L12.0001 6L12 8.00005L10 7.99995L10.0001 5.9999ZM36.0051 39.9959C36.0039 40.7259 36.1984 41.4105 36.5392 42H7C6.44772 42 6 41.5523 6 41V12H35.999V13H36.0019L36.0265 26.8941V26.8975L36.0051 39.9959ZM25 24C24.4477 24 24 24.4477 24 25C24 25.5523 24.4477 26 25 26H31C31.5523 26 32 25.5523 32 25C32 24.4477 31.5523 24 31 24H25ZM24 19C24 18.4477 24.4477 18 25 18H31C31.5523 18 32 18.4477 32 19C32 19.5523 31.5523 20 31 20H25C24.4477 20 24 19.5523 24 19ZM11 30C10.4477 30 10 30.4477 10 31C10 31.5523 10.4477 32 11 32H31C31.5523 32 32 31.5523 32 31C32 30.4477 31.5523 30 31 30H11ZM10 37C10 36.4477 10.4477 36 11 36H31C31.5523 36 32 36.4477 32 37C32 37.5523 31.5523 38 31 38H11C10.4477 38 10 37.5523 10 37ZM11.0264 26.027C10.4741 26.027 10.0264 25.5793 10.0264 25.027V17.027C10.0264 16.4747 10.4741 16.027 11.0264 16.027H19.0264C19.5787 16.027 20.0264 16.4747 20.0264 17.027V25.027C20.0264 25.5793 19.5787 26.027 19.0264 26.027H11.0264ZM12.0264 18.027V24.027H18.0264V18.027H12.0264Z" fill="black" />
-</svg>
-</i> </div>
-<div class="flex-grow">
-<span class="b-button-content__title">
-Blog </span>
-<p class="b-button-content__text">
-Nexo’s official channel </p>
-</div>
-</a>
-</li>
-<li>
+
+<!-- <li>
 <a class="b-button-content py-12" href="media-center.html">
 <div class="b-button-content__icon">
 <i class="o-icon o-icon--outline">
@@ -708,23 +588,7 @@ Media Center </span>
 News and press releases </p>
 </div>
 </a>
-</li>
-<li>
-<a class="b-button-content py-12" href="https://nexo.breezy.hr/" target="_blank" rel="noopener noreferrer">
-<div class="b-button-content__icon">
-<i class="o-icon o-icon--outline">
-<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15 5.89669C15 4.85026 15.8483 4.00195 16.8947 4.00195H40.1053C41.1517 4.00195 42 4.85026 42 5.89669V36.1072C42 37.1536 41.1517 38.002 40.1053 38.002H35V36.002H40V6.00195H17V8.00195H15V5.89669ZM7.99121 11.9948V42.0045L31.0029 42.0045V19.576H25.4994C24.3948 19.576 23.4994 18.6806 23.4994 17.576V11.9948H7.99121ZM25.4994 13.4267L29.6061 17.576L25.4994 17.576V13.4267ZM5.99121 11.9948C5.99121 10.8902 6.88664 9.99475 7.99121 9.99475H24.4994C24.7664 9.99475 25.0223 10.1015 25.2101 10.2913L32.7136 17.8726C32.8989 18.0598 33.0029 18.3126 33.0029 18.576V42.0045C33.0029 43.1091 32.1074 44.0045 31.0029 44.0045H7.99121C6.88664 44.0045 5.99121 43.1091 5.99121 42.0045V11.9948ZM15 36.002C14.4477 36.002 14 36.4497 14 37.002C14 37.5542 14.4477 38.002 15 38.002H24.0002C24.5525 38.002 25.0002 37.5542 25.0002 37.002C25.0002 36.4497 24.5525 36.002 24.0002 36.002H15ZM11 33.002C11 32.4497 11.4477 32.002 12 32.002H26.3158C26.8681 32.002 27.3158 32.4497 27.3158 33.002C27.3158 33.5542 26.8681 34.002 26.3158 34.002H12C11.4477 34.002 11 33.5542 11 33.002ZM19 18.0019C18.1716 18.0019 17.5 18.6735 17.5 19.5019C17.5 20.3304 18.1716 21.0019 19 21.0019C19.8284 21.0019 20.5 20.3304 20.5 19.5019C20.5 18.6735 19.8284 18.0019 19 18.0019ZM22.5 19.5019C22.5 20.2631 22.257 20.9675 21.8444 21.5419C23.7108 22.4346 25 24.3404 25 26.5474C25 27.3507 24.3488 28.0019 23.5454 28.0019H14.4545C13.6512 28.0019 13 27.3507 13 26.5474C13 24.3404 14.2892 22.4346 16.1556 21.5419C15.743 20.9675 15.5 20.2631 15.5 19.5019C15.5 17.5689 17.067 16.0019 19 16.0019C20.933 16.0019 22.5 17.5689 22.5 19.5019ZM18.5454 23.0019H19H19.4545C21.2271 23.0019 22.6959 24.3028 22.9583 26.0019H15.0417C15.3041 24.3028 16.7728 23.0019 18.5454 23.0019Z" fill="black" />
-</svg>
-</i> </div>
-<div class="flex-grow">
-<span class="b-button-content__title">
-Careers </span>
-<p class="b-button-content__text">
-Join the Nexo Team </p>
-</div>
-</a>
-</li>
+</li> -->
 <li>
 <a class="b-button-content py-12" href="licenses-and-registrations.html">
 <div class="b-button-content__icon">
@@ -752,7 +616,7 @@ digital assets institution </p>
 </i> </div>
 <div class="flex-grow">
 <span class="b-button-content__title">
-Nexo Prime </span>
+Liqd Prime </span>
 <p class="b-button-content__text">
 Crypto Prime Brokerage </p>
 </div>
@@ -786,10 +650,6 @@ Borrow against your NFTs </p>
 <li class="b-navbar__item relative">
 <a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="security.html">
 Security </a>
-</li>
-<li class="b-navbar__item relative">
-<a class="b-navbar__button b-navbar__button--line b-navbar__button--line-top px-12 py-24 " href="https://support.nexo.io/hc/en-us" target="_blank" rel="noopener noreferrer">
-Help </a>
 </li>
 </ul>
 <div class="o-col flex items-center">
