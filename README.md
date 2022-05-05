@@ -1,2 +1,2 @@
-# lithex.io
+# liqd.fi
  
